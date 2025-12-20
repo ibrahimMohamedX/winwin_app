@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:winwin_app/core/routes/routes_data.dart';
+import 'package:WinWin/core/routes/routes_data.dart';
 import './core/utils/themes_data.dart';
 
 void main() {

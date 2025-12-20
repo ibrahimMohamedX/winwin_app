@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:winwin_app/features/splash/splash_screen.dart';
+import 'package:WinWin/features/splash/splash_screen.dart';
 
 class RoutesData {
   //
