@@ -7,8 +7,8 @@ version: 1.0.0+1
 environment:
   sdk: ^3.10.4
 
-#
 dependencies:
+  animate_do: ^4.2.0
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
@@ -16,21 +16,20 @@ dependencies:
   go_router: ^17.0.1
   lottie: ^3.3.2
 
-#
 dev_dependencies:
   flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
 
-#
 flutter:
   uses-material-design: true
 
-  #
   assets:
     - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/shapes/
 
-  #
   fonts:
     - family: SchylerRaleway
       fonts:
