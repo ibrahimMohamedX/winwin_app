@@ -1,4 +1,5 @@
-import 'package:WinWin/core/consts/colors_data.dart';
+import 'package:WinWin/core/consts/app_colors.dart';
+import 'package:WinWin/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {
@@ -15,7 +16,7 @@ class MainButton extends StatelessWidget {
         width: double.infinity,
         height: 61,
         decoration: BoxDecoration(
-          color: ColorsData.primaryColor,
+          color: AppColors.prim1,
           borderRadius: BorderRadius.circular(16),
         ),
         child: Center(

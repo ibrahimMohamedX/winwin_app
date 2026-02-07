@@ -1,5 +1,5 @@
 import 'package:WinWin/core/components/main_button.dart';
-import 'package:WinWin/core/consts/colors_data.dart';
+import 'package:WinWin/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class OnboardCard extends StatelessWidget {
@@ -37,10 +37,9 @@ class OnboardCard extends StatelessWidget {
         height: 615,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(22),
-          color: ColorsData.whiteColor,
+          color: AppColors.white,
         ),
         child: Container(
-          decoration: BoxDecoration(),
           child: Column(
             children: [
               Image.asset(

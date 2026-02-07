@@ -1,8 +1,8 @@
-import 'package:WinWin/features/onboarding/onboard_screen.dart';
+import 'package:WinWin/Modules/onboarding/presentation/pages/onboard_screen.dart';
 import 'package:go_router/go_router.dart';
-import 'package:WinWin/features/splash/splash_screen.dart';
+import 'package:WinWin/Modules/splash/splash_screen.dart';
 
-class RoutesData {
+class AppRoutes {
   //
   static const String splash = '/splash';
   static const String onboarding = '/onboarding';

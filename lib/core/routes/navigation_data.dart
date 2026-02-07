@@ -16,3 +16,7 @@ void pushAndRemoveUntil(BuildContext context, String route, [Object? extra]) {
 void pop(BuildContext context) {
   return context.pop();
 }
+
+bool canpop(BuildContext context) {
+  return context.canPop();
+}

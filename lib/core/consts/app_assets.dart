@@ -1,4 +1,4 @@
-class AssetsData {
+class AppAssets {
   // png
   static const String Ponboard_1 = 'assets/images/onboarding-1.png';
   static const String Ponboard_2 = 'assets/images/onboarding-2.png';
@@ -8,13 +8,17 @@ class AssetsData {
   static const String LanimatedLogo = 'assets/images/animated_logo.json';
 }
 
-class IconsData {
+class AppIcons {
   // svg
   static const String Sarrow_right = 'assets/icons/arrow_right.svg';
 }
 
-class ShapesData {
+class AppShapes {
   // svg
   static const String Sonboard_top = 'assets/shapes/onboard_top.svg';
   static const String Sonboard_bottom = 'assets/shapes/onboard_bottom.svg';
+}
+
+class AppFonts {
+  static const String Raleway = 'SchylerRaleway';
 }
