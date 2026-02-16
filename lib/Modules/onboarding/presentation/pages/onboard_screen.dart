@@ -1,6 +1,8 @@
 import 'package:WinWin/core/consts/app_assets.dart';
 import 'package:WinWin/Modules/onboarding/data/model/onboarding_model.dart';
 import 'package:WinWin/Modules/onboarding/presentation/widgets/onboard_card.dart';
+import 'package:WinWin/core/routes/app_routes.dart';
+import 'package:WinWin/core/routes/navigation_data.dart';
 import 'package:WinWin/core/themes/app_colors.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
@@ -16,13 +18,6 @@ class OnboardScreen extends StatefulWidget {
 class _OnboardScreenState extends State<OnboardScreen> {
   final PageController _controller = PageController();
   int _currentPage = 0;
-  // List imgs = [AssetsData.Ponboard_1, AssetsData.Ponboard_2];
-  // List titles = ['Hello', 'Ready?'];
-  // List descs = [
-  //   'Discover amazing product for evre need.Shop smart,live better.Everything you need ,all in one place',
-  //   '.Start shopping now.Find what you love today.Lets get shopping',
-  // ];
-  // List gohome = [false, true];
   List<OnboardingModel> onboardingItems = OnboardingModel.onboardingData;
 
   @override
@@ -68,26 +63,32 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   )
                 : SizedBox(),
             FadeIn(
-              child: Container(
-                padding: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: AppColors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black26,
-                      blurRadius: 10,
-                      spreadRadius: 0,
-                      offset: Offset(0, 5),
+              child: InkWell(
+                onTap: () {
+                  //! go to main screen (for now)
+                  pushAndRemoveUntil(context, AppRoutes.main);
+                },
+                child: Container(
+                  padding: EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: AppColors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black26,
+                        blurRadius: 10,
+                        spreadRadius: 0,
+                        offset: Offset(0, 5),
+                      ),
+                    ],
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Text(
+                    'Skip',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.prim1,
                     ),
-                  ],
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Text(
-                  'Skip',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w700,
-                    color: AppColors.prim1,
                   ),
                 ),
               ),
@@ -157,7 +158,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
       height: 30,
       width: 30,
       decoration: BoxDecoration(
-        color: _currentPage == index ? AppColors.prim1 : AppColors.second,
+        color: _currentPage == index ? AppColors.prim1 : AppColors.hover2,
         borderRadius: BorderRadius.circular(15),
       ),
     );

@@ -1,4 +1,6 @@
-import 'package:WinWin/core/components/main_button.dart';
+import 'package:WinWin/core/routes/app_routes.dart';
+import 'package:WinWin/core/routes/navigation_data.dart';
+import 'package:WinWin/core/shared/widgets/components/main_button.dart';
 import 'package:WinWin/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -46,6 +48,7 @@ class OnboardCard extends StatelessWidget {
                 image, //* var
                 width: double.infinity,
                 fit: BoxFit.cover,
+                height: 340,
               ),
               Spacer(),
               Text(
@@ -68,8 +71,10 @@ class OnboardCard extends StatelessWidget {
                       width: 200,
                       child: MainButton(
                         text: "Let's start",
+                        width_present: 0.536,
                         ontap: () {
-                          //! go to home screen
+                          //! go to main screen (for now)
+                          pushAndRemoveUntil(context, AppRoutes.main);
                         },
                       ),
                     )

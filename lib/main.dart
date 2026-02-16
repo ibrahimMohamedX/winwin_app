@@ -1,6 +1,6 @@
 import 'package:WinWin/core/themes/app_thems.dart';
 import 'package:flutter/material.dart';
-import 'package:WinWin/core/routes/routes_data.dart';
+import 'package:WinWin/core/routes/app_routes.dart';
 
 void main() {
   runApp(const MyApp());

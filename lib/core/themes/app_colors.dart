@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const prim1 = Color(0xFF27BAD4);
+  static const second = Color(0xff0042E0);
 
-  static const second = Color(0xFFC7D6FB);
-  static const hover = Color(0xFFF2F5FE);
+  static const hover1 = Color(0xffF8F8F8);
+  static const hover2 = Color(0xFFC7D6FB);
 
   static const light_bg = Color(0xffF9FFF9);
   static const red = Color(0xffFF3A6E);

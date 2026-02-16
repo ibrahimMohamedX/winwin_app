@@ -32,26 +32,30 @@ class Responsive {
 
   static bool isDesktop(BuildContext context) =>
       deviceType(context) == DeviceType.desktop;
+
+  // extension ResponsiveConstraints on BoxConstraints {
+  //   double rw(double factor) {
+  //     assert(factor > 0 && factor <= 1);
+  //     return maxWidth * factor;
+  //   }
+
+  //   double rh(double factor) {
+  //     assert(factor > 0 && factor <= 1);
+  //     return maxHeight * factor;
+  //   }
+  // }
+
+  static double ResponsiveHeight({
+    required BuildContext context,
+    double? height,
+  }) => height != null
+      ? MediaQuery.of(context).size.height * height
+      : MediaQuery.of(context).size.height;
+
+  static double ResponsiveWidth({
+    required BuildContext context,
+    double? width,
+  }) => width != null
+      ? MediaQuery.of(context).size.width * width
+      : MediaQuery.of(context).size.width;
 }
-
-// extension ResponsiveConstraints on BoxConstraints {
-//   double rw(double factor) {
-//     assert(factor > 0 && factor <= 1);
-//     return maxWidth * factor;
-//   }
-
-//   double rh(double factor) {
-//     assert(factor > 0 && factor <= 1);
-//     return maxHeight * factor;
-//   }
-// }
-
-double ResponsiveHeight({required BuildContext context, double? hight}) =>
-    hight != null
-    ? MediaQuery.of(context).size.height * hight
-    : MediaQuery.of(context).size.height;
-
-double ResponsiveWidth({required BuildContext context, double? width}) =>
-    width != null
-    ? MediaQuery.of(context).size.width * width
-    : MediaQuery.of(context).size.width;

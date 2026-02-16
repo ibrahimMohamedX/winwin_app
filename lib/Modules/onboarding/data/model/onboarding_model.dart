@@ -23,6 +23,18 @@ class OnboardingModel {
     ),
     OnboardingModel(
       image: AppAssets.Ponboard_2,
+      title: 'Discover Amazing Product',
+      body: 'Clothes , electronics , books and more in one place',
+      gohome: false,
+    ),
+    OnboardingModel(
+      image: AppAssets.Ponboard_2,
+      title: 'Easy& Fast Shopping',
+      body: 'Add items to your cart and order in just a few steps',
+      gohome: false,
+    ),
+    OnboardingModel(
+      image: AppAssets.Ponboard_3,
       title: 'Ready?',
       body: '.Start shopping now.Find what you love today.Lets get shopping',
       gohome: true,

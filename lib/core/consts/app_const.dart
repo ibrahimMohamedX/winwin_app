@@ -4,20 +4,25 @@ import 'package:flutter/material.dart';
 class AppConsts {
   // padding
   static const pagepadding = EdgeInsets.symmetric(horizontal: 20);
+  static const padd_marg_small = EdgeInsets.all(5);
   static const padd_marg = EdgeInsets.all(15);
   static const padd_button = EdgeInsets.symmetric(horizontal: 15, vertical: 5);
-  static const padd_small_button = EdgeInsets.all(10);
+  static const padd_small_button = EdgeInsets.symmetric(
+    horizontal: 10,
+    vertical: 5,
+  );
 
   // border
-  static final border_prim = Border.all(width: 2, color: AppColors.second);
+  static final border_prim = Border.all(width: 2, color: AppColors.prim1);
   static final border_second = Border.all(
     width: 2,
-    color: AppColors.second.withAlpha(100),
+    color: AppColors.hover2.withAlpha(100),
   );
   static final border_accent = Border.all(width: 2, color: AppColors.accent);
   static final border_red = Border.all(width: 2, color: AppColors.red);
   // border raduis
-  static final raduis_medium = BorderRadius.circular(15);
+  static final raduis_small = BorderRadius.circular(8);
+  static final raduis_medium = BorderRadius.circular(12);
   static final raduis_big = BorderRadius.circular(30);
 
   // duration
